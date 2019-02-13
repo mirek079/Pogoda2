@@ -1,0 +1,357 @@
+body:after
+{
+    content: url(../img/burza.png) url(../img/deszcz.png) url(../img/slonecznie.png) url(../img/snieg.png) url(../img/snieg_deszcz.png) url(../img/zachmurzenie.png) url(../img/zachmurzenie_lekkie.png);
+    display: none;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+  
+
+
+body {
+    background-color: #ffecb3;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.gruby {
+    font-weight: bold;
+}
+.col1 {
+    background: #5C7080;
+}
+
+.col2 {
+    background: #6BC0FF;
+    
+}
+.tlo {
+    background: #ffecb3;
+}
+
+
+.tlo-transparent {
+    background: rgba(255, 255, 255, 0.0);
+    border: 0;
+    
+    box-shadow: none;
+}
+
+.tloBar {
+    background: #ffeaad;
+}
+.ramka {
+
+    border:solid thick darkgrey; 
+    border-width:1px; 
+
+}
+.nopadding {
+    padding: 0px;
+}
+.nomargin {
+    margin: 0px;
+}
+.with-padding {
+    padding-left: 50px;
+    padding-right: 50px;
+    /*padding-block-start: 20px;*/
+}
+#rememberLabel {
+    margin-left: 0px; 
+}
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    /* pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    /*pointer-events:none; */
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+   /* pointer-events: all; */
+}
+
+.panel-pogoda {
+    background: #FCF1CF;
+    
+    border-color: rgba(122, 122, 122, 0.3);
+    box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 0px 0px 0px 0px;
+}
+
+.panel-pogoda  > .panel-heading-pogoda {
+    color: #333; 
+    font-family:  'Arial ', sans-serif, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background:#ACD0C0;
+    padding: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 0px;
+}
+.panel-pogoda p {
+    font-size: 18px;
+    padding: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+   
+h4 strong {
+
+    color: #ddd; 
+    /*font-family: 'Rajdhani', sans-serif;*/
+    font-family:  'Arial ', sans-serif, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panel-title {
+    margin-bottom: 14px;
+}
+.panel-heading {
+    border-bottom: solid thick #fff; 
+
+    border-width:1px; 
+}
+
+.panel-title a:link, a:visited {
+    color: #ccc;     
+    font-size: 18px;
+}
+
+.panel-heading-pogoda a:link, a:visited {
+    color: #333;     
+    font-weight: normal;
+}
+
+.panel-heading-pogoda a:hover {
+    color: silver;     
+}
+
+.panel_margin {
+    margin-top: 0px;
+}
+
+.label-nowosc {
+    background: #6BC0FF;
+    color: #fff; 
+}
+
+
+.czarne {
+    color: black;
+}
+.szare {
+    color: lightgray;
+}
+.biale {
+    color: white;
+}
+
+
+.btn-selected {
+    color: white;
+}
+
+.btn-logi, .btn-logi:focus,  .btn-logi:visited {
+
+    background: #ACD0C0;
+	padding: 5px 6px 6px 6px;
+	color: #fff;
+	font-weight: 400;
+	line-height: auto 1;
+	text-decoration: none;
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+	
+	text-shadow: 0 0px 0px rgba(0,0,0,0.25);
+	border-bottom:  1px solid rgba(0,0,0,.25);
+	cursor: pointer;
+	margin: auto 2px;
+    outline:none !important;
+    z-index: 1;
+}
+.btn-logi:active {
+	box-shadow: 0 0px 0px rgba(0,0,0,0.6);
+	
+	text-shadow: 0 0px 0px rgba(0,0,0,0.25);
+}
+.selected.btn-logi {
+    color: #444;
+    background: rgba(255,140,0,.7);
+}
+.btn-logi:hover {
+    background: #75B1A9;
+    color: #eee;
+  	font-weight: 400;
+	line-height: auto 1;
+	text-decoration: none;
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+	
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	cursor: pointer;
+	outline:none !important;  
+    /*background: rgba(255,140,0,.5);*/
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left:10%; 
+    margin-right:10%;
+    margin-top:20px;
+}
+
+
+#prognoza th {
+    background-color: #75b1a9;
+    text-align: center;
+    
+    color: white;
+}
+.tlo-blue {
+    background: #9cc0b0;
+}
+#prognoza tr {
+    padding: 0;
+}
+
+#prognoza td {
+    text-align: center;
+    
+    padding: 1px 4px 1px 4px;
+}
+
+#prognoza img {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 1px;
+    margin: 1px;
+    width: 50px;
+  }
+
+
+#prognoza tr:hover{background-color:#4f6457; color: grey;}
+#prognoza tr:nth-child(even){background-color: #75B1A9; color: #011A27;}
+#prognoza tr:nth-child(odd){background-color: #ACD0C0;color: #2d4262;}
+
+.niebieski {
+    background: #6BC0FF;
+    border-radius: 32px;
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.08);
+    border: 1px;
+}
+
+hr.style1 {
+    width: 40%;
+	border-top: 2px solid rgba(75, 136, 194, 0.9);
+    z-index: -1;
+}
+
+.jasne {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    border-color:  rgba(0, 0, 0, 0.8);
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.02);
+    border: 5px;
+}
+
+hr.style2 { 
+  width: 40%;
+  border-top: 1px dashed #8c8b8b; 
+  z-index: -1;
+} 
+
+hr.style3 {
+	border-top: 3px double #8c8b8b;
+    z-index: 100;
+}
+
+hr.style4 {
+	/*height: 10px;*/
+	border: 0;
+    border-top: 1px dashed lightblue;
+    z-index: -1;
+	/*box-shadow: 0 10px 10px -10px lightblue inset;*/
+}
+
+
+a, a:link, a:visited, a:active, a:hover {
+    
+    text-decoration: none;
+    border:0!important;
+}
+.specjalna_czcionka {
+    font-family: Arial, Geneva, sans-serif;
+    font-size: 14px;
+    /*font-family: 'Rajdhani', sans-serif;*/
+}
+
+.font_info {
+    font-family: Arial, Geneva, sans-serif;
+    font-size: 14px;
+    color: red;
+}
+
+
+
+.margin_dashboard {
+    margin-bottom: 25px;
+}
+
+@media (min-width: 200px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+@media (max-width: 550px) {
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-left:0%; 
+        margin-right:0%;
+    }
+    .with-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+}
+
+
+.user-panel {
+  /* for text on pannel */
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) 0 1px 1px);
+  background: #f4cc70 none repeat scroll 0 0;
+  margin-top: 0px !important;
+  margin-bottom: 10px !important;
+  padding: 6px;
+  border-radius: 18px;
+}
+
+.panel-body {
+  padding-top: 30px !important;
+}
+
+/*<USER_DATA> */

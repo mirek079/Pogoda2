@@ -1,0 +1,96 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> Pogoda </title>
+    <meta charset = "utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel = "stylesheet" type="text/css" href = "css/fap.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    
+    <script src="https://apis.google.com/js/platform.js" async defer> </script>
+</head> 
+
+<body>
+
+   
+<div class="container-fluid with-padding">
+
+    <div class="row tlo">
+        <br>
+    </div>
+
+    <div class="row tlo">
+        <div id="pogoda_naa_dzis" class="col-xs-12 col-sm-10 col-md-10 col-lg-6 col-sm-offset-2 col-md-offset-2 col-lg-offset-3 margin_dashboard">
+        <form class="form-horizontal jasne" method="post">
+
+            <div class="form-group specjalna_czcionka">
+                <div class="col-xs-12 text-center">
+                    <br><span class="" ><h3>Pogoda na Dziś</h3></span><hr class="style1"> <br><br>
+                </div>
+                <div class="form-group ">
+                        <label class="col-xs-6 col-xs-offset-3" id="freeLabel" for="place"> Miejscowość </label>
+                        <div class="col-xs-6 col-xs-offset-3"><input class="form-control"  placeholder="nazwa szukanej miejscowości" value="" id="place" type="text" maxlength="120">
+                    </div>
+                    <div class="col-xs-2  col-xs-offset-0"><input class="form-control"  placeholder="country code" value="" id="countrzcode" type="text" maxlength="20">
+                    </div>
+    <!--
+                        <div class="checkbox checkbox-info">
+                            <input id="chkTablet" type="checkbox" checked="">
+                            <label id="tabletLabel" for="chkTablet">
+                                Tablet
+                            </label>
+                        </div>
+    -->
+                    <div class="col-xs-9 col-xs-offset-10 ">
+                        <br>
+                        <input class="btn btn-logi" data-loading-text="Szuka..." value="Szukaj" id="btSearch" type="button">
+                    </div>
+                </div>
+            </div>
+            </form>
+            </div>
+        </div>
+        <div class="row tlo">
+            <div id="current_weather" class="col-xs-12 col-sm-10 col-md-10 col-lg-6 col-sm-offset-2 col-md-offset-2 col-lg-offset-3 ">
+                <div class="panel panel-pogoda col-xs-6 col-xs-offset-3" id="pogoda_na_dzis">
+                    <div class="panel-heading-pogoda" id="miasto">Kraków</div>
+                    <div class="panel-body text-center">
+                        <img src="img/śnieg_deszcz.png" alt="Pogoda_obrazek" class="tlo">
+                        <p>broken clouds</p> 
+                        <p>temp max 6.0[°C]</p> 
+                        <p>temp min 6.0[°C]</p> 
+                        <p>cisnienie 1002 [hPa]</p>  
+                        <p>wilgotnośc 75 [%] </p>
+                        <p>wschód słońca 06:49:30</p> 
+                        <p>zachód słońca 16:43:40</p>                    
+                        <p>pomiar z godziny 13:30:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="prognoza" class="col-xs-12 col-sm-10 col-md-10 col-lg-6 col-sm-offset-2 col-md-offset-2 col-lg-offset-3 margin_dashboard ">
+                
+            <table id="prog_tab">
+                <tr>
+                    <th colspan="6">
+                        <h3>PROGNOZA</h3>
+                    </th>
+                </tr>
+                <tr><th>pogoda</th><th>godzina</th><th>temp. max</th><th>temp. min</div></th><th>ciśnienie</div></th><th>wilgotność</th></tr>
+                <tr><td><img src="img/śnieg_deszcz.png" alt="Pogoda_obrazek"></td><td>Tehawanka</td><td>1276</td><td>0</td><td>0</td><td>PL</td></tr>
+                <tr><td><img src="img/śnieg.png" alt="Pogoda_obrazek"></td><td>Justyna M.</td><td>400</td><td>0</td><td>0</td><td>PL</td></tr>
+                <tr><td>5</td><td>mk40</td><td>151</td><td>3</td><td>1</td><td>PL</td></tr>
+                <tr><td>6</td><td>AsiaW</td><td>121</td><td>0</td><td>0</td><td>PL</td></tr>
+            
+            </table>
+        </div>        
+    </div>
+</body>
+</html>
